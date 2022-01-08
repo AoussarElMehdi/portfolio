@@ -1,0 +1,114 @@
+.container {
+  margin-top: -5rem;
+  padding-top: 5rem;
+  height: 100vh;
+  background: var(--logo-clr-lighter-2);
+  background-image: url(../images/home-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 60%;
+  right: 0;
+  bottom: 0;
+  background: var(--clr-white);
+}
+.container_section {
+  height: 100%;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.home_img {
+  position: relative;
+  display: block;
+}
+h3{
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.contact_btn {
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--logo-dark-clr-1);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  font-size: 0.9rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+}
+.contact_btn:hover {
+ background: var(--logo-clr-1);
+ color: var(--clr-white);
+  box-shadow: var(--light-shadow);
+}
+.social_links {
+  display: grid;
+  margin-top: 10px;
+  width: 10rem;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  position: relative;
+}
+.social_link {
+  font-size: 1.5rem;
+  color: var(--clr-grey-1);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 1200px){
+  .container::before {
+    left: 70%;
+  }
+  .home_img {
+    height: 360px;
+    width: 360px;
+    transform: translateX(-59px);
+  }
+}
+
+@media screen and (max-width: 992px){
+  .container::before {
+    left: 100%;
+  }
+  .home_img {
+    transform: translateX(10px);
+  }
+}
+
+@media screen and (max-width: 870px){
+  .container_section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;;
+  }
+  .home_img{
+    height: 360px;
+    width: 360px;
+    transform: translate(-70px, -60px);
+    align-self: flex-end;
+  }
+  .home_info{
+    align-self: flex-start;
+    margin: 20px 0 0 36px;
+  }
+  .container {
+    height: 100vh;
+    max-width: 100%;
+  }
+}
