@@ -20,19 +20,19 @@ const Footer = () => {
             <h2>Links</h2>
             <ul className={styles.footer_links}>
               <li className={styles.footer_link}>
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li className={styles.footer_link}>
-                <a href="#">About</a>
+                <a href="#about">About</a>
               </li>
               <li className={styles.footer_link}>
-                <a href="#">Services</a>
+                <a href="#services">Services</a>
               </li>
               <li className={styles.footer_link}>
-                <a href="#">Projects</a>
+                <a href="#projects">Projects</a>
               </li>
               <li className={styles.footer_link}>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -40,21 +40,21 @@ const Footer = () => {
             <h2>Services</h2>
             <ul className={styles.footer_links}>
               <li className={styles.footer_link}>
-                <a href="">Web Design</a>
+                <a href="#services">Web Design</a>
               </li>
               <li className={styles.footer_link}>
-                <a href="">Software Development</a>
+                <a href="#services">Software Development</a>
               </li>
               <li className={styles.footer_link}>
-                <a href="">Business Strategy</a>
+                <a href="#services">Business Strategy</a>
               </li>
               <li className={styles.footer_link}>
-                <a href="">Graphic Design</a>
+                <a href="#services">Graphic Design</a>
               </li>
             </ul>
           </div>
           <div className={styles.footer_row}>
-            <h2>Have a Questions?</h2>
+            <h2>Contacts</h2>
             <ul>
               <li className={styles.footer_elem}>
                 <IoLocationOutline className={styles.footer_icons} />
@@ -62,7 +62,7 @@ const Footer = () => {
               </li>
               <li className={styles.footer_elem}>
                 <ImPhone className={styles.footer_icons} />
-                <span>+212 (0) 6 97 70 42 55</span>
+                <span>+212 (0) 7 62 72 70 34</span>
               </li>
               <li className={styles.footer_elem}>
                 <IoIosMail className={styles.footer_icons} />
@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.footer_copyright}>
-          <p>Copyright © {new Date().getFullYear()} All rights reserved</p>
+          <p>Copyright © {new Date().getFullYear()} All rights reserved </p>
           <a
             href="https://www.linkedin.com/in/elmehdiaoussar/"
             target="_blank"

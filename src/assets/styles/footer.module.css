@@ -21,8 +21,7 @@
   font-size: 22px;
   margin: 28px 0;
 }
-.footer_row p,
-span {
+.footer_row p {
   color: var(--clr-grey-7);
 }
 .footer_copyright {
@@ -35,7 +34,7 @@ span {
   margin-bottom: 2px;
   color: var(--clr-grey-7);
 }
-.footer_copyright a {
+.footer_elem span, .footer_copyright a {
   color: var(--clr-grey-7);
 }
 .footer_icons {
@@ -47,8 +46,6 @@ span {
   display: flex;
   align-items: center;
   margin-top: 20px;
-}
-.footer_links {
 }
 .footer_link{
     margin: 10px 0;
