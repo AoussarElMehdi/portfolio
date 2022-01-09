@@ -1,0 +1,10 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 5px;
+  border-radius: 20px;
+  box-shadow: var(--dark-shadow);
+  min-width: 360px;
+  margin: 18px 0;
+}
