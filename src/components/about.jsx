@@ -44,7 +44,7 @@ const About = () => {
                 <span>elmehdiaoussar.contact@gmail.com</span>
               </li>
               <li>
-                <span className={styles.about_title}>Phone</span>
+                <span className={styles.about_title}>Phone:</span>
                 <span>+212 762 727 034</span>
               </li>
             </ul>
